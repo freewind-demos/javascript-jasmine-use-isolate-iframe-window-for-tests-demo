@@ -10,7 +10,7 @@ Jasmine现在支持很多语言，在JavaScript这边支持浏览器运行和nod
 下载地址：https://github.com/jasmine/jasmine/releases
 
 ```
-open index.html
+open SpecRunner.html
 ```
 
 ![demo](./images/demo.jpg)
