@@ -1,15 +1,14 @@
-JavaScript Jasmine Browser Tests Demo
+JavaScript Jasmine JQuery Tests Demo
 =====================================
 
-Jasmine现在支持很多语言，在JavaScript这边支持浏览器运行和node运行。
+在浏览器中运行Jasmine测试。如果我们的代码中使用jquery，比如`window.$`，怎么测试？
 
-浏览器运行，是通过下载一个完整的示例包解压在本地，然后把自己的源代码和测试文件放在合适的地方，然后在它的基础上改改。
+Jasmine的做法是简单直接的，直接在`SpecRunner.html`中增加对JQuery的引用，然后再依次导入源文件和测试文件，最后在浏览器中打开`SpecRunner.html`
 
-这个Demo里的文件，基本上就是解压之后的原文件。
-
-下载地址：https://github.com/jasmine/jasmine/releases
+不过它带来的问题是源代码和测试代码不能使用模块语句。如果我们要使用，可能借助别的工具（比如browserify/webpack等），先对它们进行处理，再引入到`SpecRunner.html`中。
 
 ```
+npm install
 open SpecRunner.html
 ```
 
