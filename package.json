@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "test": "open SpecRunner.html"
+  },
   "dependencies": {
     "jquery": "^3.3.1"
   }
